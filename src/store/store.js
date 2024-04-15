@@ -1,14 +1,10 @@
-import Layout from "../Layout/Layout";
-import Basket from "../pages/Basket/Basket";
-import Home from "../pages/Home/Home";
 import { configureStore } from "@reduxjs/toolkit";
-
-
+import Product from "../reducers/Product/Product";
+import Cart from "../reducers/Cart/Cart";
 
 export const store=configureStore({
     reducer:{
-        Layout,
-        Home,
-        Basket
+        Product : Product,
+        Cart : Cart
     }
 })
